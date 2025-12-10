@@ -66,6 +66,10 @@ ORDER BY LOWER(RIGHT(name, 3)), id;
 
 
 
+---
+
+
+
 \## Solución (MySQL)
 
 
