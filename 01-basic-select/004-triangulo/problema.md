@@ -62,23 +62,22 @@ La tabla `TRIANGLES` tiene la siguiente estructura:
 
 SELECT 
 
-&nbsp;   a, 
+  a, 
 
-&nbsp;   b, 
+  b, 
 
-&nbsp;   c,
+  c,
 
-&nbsp;   CASE 
+  CASE 
 
-&nbsp;       WHEN a + b <= c OR a + c <= b OR b + c <= a THEN 'Not A Triangle'
+      WHEN a + b <= c OR a + c <= b OR b + c <= a THEN 'Not A Triangle'
 
-&nbsp;       WHEN a = b AND a = c AND b = c THEN 'Equilateral'
+      WHEN a = b AND a = c AND b = c THEN 'Equilateral'
 
-&nbsp;       WHEN a = b OR a = c OR b = c THEN 'Isosceles'
+      WHEN a = b OR a = c OR b = c THEN 'Isosceles'
 
-&nbsp;       WHEN a <> b AND a <> c AND b <> c THEN 'Scalene'
-
-&nbsp;   END AS tipo
+      WHEN a <> b AND a <> c AND b <> c THEN 'Scalene'
+  END AS tipo
 
 FROM triangles;
 
